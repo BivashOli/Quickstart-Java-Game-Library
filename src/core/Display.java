@@ -1,3 +1,5 @@
+package core;
+
 
 import java.awt.Canvas;
 import java.awt.Dimension;
@@ -7,7 +9,7 @@ import javax.swing.JFrame;
 public class Display {
 
 	public static int WIDTH = 960, HEIGHT = 540;
-	public static String TITLE = "Space Mayhem";
+	public static String TITLE = "Dungeon Crawler";
 	
 	private JFrame frame;
 	private Canvas canvas;

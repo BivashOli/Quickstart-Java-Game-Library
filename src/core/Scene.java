@@ -1,5 +1,9 @@
+package core;
+
 import java.awt.Graphics;
 import java.util.LinkedList;
+
+import core.entities.Entity;
 
 public class Scene {
 
@@ -17,10 +21,11 @@ public class Scene {
 	}
 	
 	protected String name;
-	protected LinkedList<Entity> entities = new LinkedList<Entity>();
+	public LinkedList<Entity> entities = new LinkedList<Entity>();
 	
 	public Scene() {
 
+		//PhysicsEngine.entities = new LinkedList<Entity>();
 
 		init();
 //		System.out.println(this.name);
@@ -58,5 +63,7 @@ public class Scene {
 	public void addEntity(Entity entity) {
 		entities.add(entity);
 	}
+	
+	
 
 }
